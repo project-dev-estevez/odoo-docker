@@ -12,7 +12,7 @@ services:
       - odoo-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./custom_addons:/mnt/extra-addons
-    entrypoint: "odoo -c /etc/odoo/odoo.conf --dev all -u rh_estevez"
+    entrypoint: "odoo -c /etc/odoo/odoo.conf -u hr_estevez --dev xml"
 
   db:
     container_name: ${DB_HOST}
